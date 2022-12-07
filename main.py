@@ -1,5 +1,6 @@
 import os
 import time
+import ctypes
 import yfinance as yf
 import mplfinance as mpf
 import matplotlib.pyplot as plt
@@ -12,6 +13,8 @@ if __name__ == "__main__":
 if os.name == "nt":
     # Windows
     os.system("mode con: cols=72 lines=22")
+
+ctypes.windll.kernel32.SetConsoleTitleW("Power to the Players")
 
 # GameStop Banner
 banner = """
