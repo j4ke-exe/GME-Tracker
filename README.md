@@ -16,7 +16,7 @@ Might need to install mpl_finance directly. <br> \
 Easy 3 step process: <br>
 1. ```git clone https://github.com/wayahlife/GME-Tracker.git```
 2. ```cd GME-Tracker```
-3. ```pip3 install -r requirements.txt```
+3. ```pip install -r requirements.txt```
 
 # Menu
 ![Menu](https://user-images.githubusercontent.com/101604552/206302984-51ef48cc-bb81-417a-8a04-9ba19da14168.png) <br>
