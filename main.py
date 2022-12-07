@@ -1,8 +1,8 @@
 import os
 import time
 import yfinance as yf
-import matplotlib.pyplot as plt
 import mplfinance as mpf
+import matplotlib.pyplot as plt
 
 # Define main
 if __name__ == "__main__":
