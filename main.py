@@ -6,10 +6,6 @@ import yfinance as yf
 import mplfinance as mpf
 import matplotlib.pyplot as plt
 
-# Define main
-if __name__ == "__main__":
-    pass
-
 # Resize the terminal window for Mac OS
 if os.name == "posix":
     subprocess.run(['resize', '-s', '22', '72'])
@@ -110,3 +106,6 @@ try:
 
 except (KeyboardInterrupt, SystemExit, ValueError, TypeError):
     print("\nExiting... Hedgies R' Fuk.\n")
+
+if __name__ == "__main__":
+    main()
