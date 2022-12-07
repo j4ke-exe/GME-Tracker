@@ -1,6 +1,7 @@
 import os
 import time
 import ctypes
+import subprocess
 import yfinance as yf
 import mplfinance as mpf
 import matplotlib.pyplot as plt
@@ -9,11 +10,16 @@ import matplotlib.pyplot as plt
 if __name__ == "__main__":
     pass
 
-# Resize the terminal window
+# Resize the terminal window for Mac OS
+if os.name == "posix":
+    subprocess.run(['resize', '-s', '22', '72'])
+
+# Resize the terminal window for Windows
 if os.name == "nt":
     # Windows
     os.system("mode con: cols=72 lines=22")
 
+# Rename terminal window
 ctypes.windll.kernel32.SetConsoleTitleW("Power to the Players")
 
 # GameStop Banner
