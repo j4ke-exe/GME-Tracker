@@ -106,6 +106,3 @@ try:
 
 except (KeyboardInterrupt, SystemExit, ValueError, TypeError):
     print("\nExiting... Hedgies R' Fuk.\n")
-
-if __name__ == "__main__":
-    main()
