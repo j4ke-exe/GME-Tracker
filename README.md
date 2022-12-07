@@ -5,7 +5,7 @@ None of this is financial advice. <br>
 Lightweight, easy to use, all-in-one program that displays everything a GME investor would need. <br>
 
 # Dependencies 
-* Tested with Python 3.x <br>
+* Python 3.x <br>
 * pip
 
 # Known Issues
