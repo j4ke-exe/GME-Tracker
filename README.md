@@ -18,6 +18,9 @@ Easy 3 step process: <br>
 2. ```cd GME-Tracker```
 3. ```pip install -r requirements.txt```
 
+# Syntax
+```python3 main.py```
+
 # Menu
 ![Menu](https://user-images.githubusercontent.com/101604552/206302984-51ef48cc-bb81-417a-8a04-9ba19da14168.png) <br>
 
