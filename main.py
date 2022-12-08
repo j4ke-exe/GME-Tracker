@@ -92,4 +92,4 @@ try:
     exit()
 
 except (KeyboardInterrupt, SystemExit, ValueError, TypeError):
-    os.system("cls")
+    exit()
