@@ -73,7 +73,9 @@ try:
         # Exit the program
         print("""\n
         Hedgies R' Fuk.
+        
         Ken Griffin lied under oath.
+        
         DTCC committed international 
         securities fraud.
         
