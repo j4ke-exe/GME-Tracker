@@ -22,7 +22,7 @@ Easy 3 step process: <br>
 ```python3 main.py```
 
 # Menu
-![Menu](https://user-images.githubusercontent.com/101604552/206302984-51ef48cc-bb81-417a-8a04-9ba19da14168.png) <br>
+![Menu](https://user-images.githubusercontent.com/101604552/206323363-2f20d1c5-6be1-4a03-8738-c81ba9061559.png) <br>
 
 Launch a continuous price feed. <br> \
 ![Price](https://user-images.githubusercontent.com/101604552/206303716-359411e4-3b01-4165-a7a3-b1ff8995c699.png) <br>
