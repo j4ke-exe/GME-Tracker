@@ -5,16 +5,12 @@ import subprocess
 import yfinance as yf
 import mplfinance as mpf
 import matplotlib.pyplot as plt
-
 from pyfiglet import Figlet
 
-# Resize the terminal window for Mac OS
+# Resize the terminal window
 if os.name == "posix":
     subprocess.run(['resize', '-s', '22', '43'])
-
-# Resize the terminal window for Windows
-if os.name == "nt":
-    # Windows
+elif os.name == "nt":
     os.system("mode con: cols=43 lines=22")
 
 # Rename terminal window
@@ -49,12 +45,10 @@ try:
         os.system("python3 main.py")
 
     elif choice == 2:
-
         os.system("start python3 historical.py")
         os.system("python3 main.py")
 
     elif choice == 3:
-
         # Get the historical data for the stock
         data = gme.history(period="1y")
 
@@ -64,14 +58,13 @@ try:
         # Show the plot
         plt.show()
         os.system("python3 main.py")
-    
+
     elif choice == 4:
         # Open the subreddit in a new window
         os.system("start http://www.gme.fyi")
         os.system("python3 main.py")
 
     elif choice == 5:
-
         # Open the subreddit in a new window
         os.system("start https://www.reddit.com/r/Superstonk/")
         os.system("python3 main.py")
@@ -80,9 +73,7 @@ try:
         # Exit the program
         print("""\n
         Hedgies R' Fuk.
-
         Ken Griffin lied under oath.
-
         DTCC committed international 
         securities fraud.
         
