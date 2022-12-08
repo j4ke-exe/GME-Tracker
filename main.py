@@ -6,36 +6,26 @@ import yfinance as yf
 import mplfinance as mpf
 import matplotlib.pyplot as plt
 
+from pyfiglet import Figlet
+
 # Resize the terminal window for Mac OS
 if os.name == "posix":
-    subprocess.run(['resize', '-s', '22', '72'])
+    subprocess.run(['resize', '-s', '22', '43'])
 
 # Resize the terminal window for Windows
 if os.name == "nt":
     # Windows
-    os.system("mode con: cols=72 lines=22")
+    os.system("mode con: cols=43 lines=22")
 
 # Rename terminal window
 ctypes.windll.kernel32.SetConsoleTitleW("Power to the Players")
 
-# GameStop Banner
-banner = """
-  ▄████  ▄▄▄       ███▄ ▄███▓▓█████   ██████ ▄▄▄█████▓ ▒█████   ██▓███  
- ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀ ▒██    ▒ ▓  ██▒ ▓▒▒██▒  ██▒▓██░  ██▒
-▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███   ░ ▓██▄   ▒ ▓██░ ▒░▒██░  ██▒▓██░ ██▓▒
-░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄   ▒   ██▒░ ▓██▓ ░ ▒██   ██░▒██▄█▓▒ ▒
-░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒▒██████▒▒  ▒██▒ ░ ░ ████▓▒░▒██▒ ░  ░
- ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░▒ ▒▓▒ ▒ ░  ▒ ░░   ░ ▒░▒░▒░ ▒▓▒░ ░  ░
-  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░░ ░▒  ░ ░    ░      ░ ▒ ▒░ ░▒ ░     
-░ ░   ░   ░   ▒   ░      ░      ░   ░  ░  ░    ░      ░ ░ ░ ▒  ░░       
-      ░       ░  ░       ░      ░  ░      ░               ░ ░           
-                                                                        
-                                                        By: Wayahlife
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-"""
+# Banner
+custom_fig = Figlet(font='isometric1')
+asci_banner = custom_fig.renderText("GME")
 
 # Print the banner to the console
-print(banner)
+print(asci_banner + ("-" * 43) + "\n")
 
 # Get the stock data for GameStop
 gme = yf.Ticker("GME")
@@ -60,15 +50,8 @@ try:
 
     elif choice == 2:
 
-        # Get the historical data for the stock
-        data = gme.history(period="1y")
-        print(data)
-
-        # Option
-        print("\nSelect another option? (y/n)")
-        option = input("Enter an option: ")
-        if option == "y" or option == "Y":
-            os.system("python3 main.py")
+        os.system("start python3 historical.py")
+        os.system("python3 main.py")
 
     elif choice == 3:
 
