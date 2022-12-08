@@ -79,13 +79,17 @@ try:
     elif choice == 6:
         # Exit the program
         print("""\n
-        Hedgies R' Fuk. 
-        Ken Griffin lied under oath. 
-        DTCC committed international securities fraud.
-        DRS your shares.\n""")
+        Hedgies R' Fuk.
+
+        Ken Griffin lied under oath.
+
+        DTCC committed international 
+        securities fraud.
+        
+        DRS your shares!\n""")
         time.sleep(5)
     os.system("cls")
     exit()
 
 except (KeyboardInterrupt, SystemExit, ValueError, TypeError):
-    print("\nExiting... Hedgies R' Fuk.\n")
+    os.system("cls")
