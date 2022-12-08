@@ -9,8 +9,9 @@ Lightweight, easy to use, all-in-one program that displays everything a GME inve
 * pip
 
 # Known Issues
-Might need to install mpl_finance directly. <br> \
-```pip install https://github.com/matplotlib/mpl_finance/archive/master.zip```
+Might need to install mpl_finance and Matplotlib directly. <br> \
+1. ```pip install https://github.com/matplotlib/mpl_finance/archive/master.zip```
+2. ```python -m pip install -U matplotlib```
 
 # Installing
 Easy 3 step process: <br>
