@@ -25,7 +25,7 @@ Easy 3 step process: <br>
 ![Menu](https://user-images.githubusercontent.com/101604552/206324403-30c315d3-cb4e-4593-8e7e-605dff7a1b4e.png) <br>
 
 Launch a continuous price feed. <br> \
-![Price](https://user-images.githubusercontent.com/101604552/206303716-359411e4-3b01-4165-a7a3-b1ff8995c699.png) <br>
+![Price](https://user-images.githubusercontent.com/101604552/206325328-bf123f4f-7954-49d1-a6f6-18b8ba44f4e5.png) <br>
 
 Display historical 1 year data. <br> \
 ![Historical](https://user-images.githubusercontent.com/101604552/206324444-f18b88dc-445e-46a0-af3e-d0df86b7218e.png) <br>
