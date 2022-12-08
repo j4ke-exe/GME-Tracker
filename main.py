@@ -2,6 +2,7 @@ import os
 import time
 import ctypes
 import subprocess
+import webbrowser
 import yfinance as yf
 import mplfinance as mpf
 import matplotlib.pyplot as plt
@@ -30,12 +31,12 @@ def plot_historical_data():
 
 def open_dd_library():
     # Open the DD library in a new window
-    os.system("start http://www.gme.fyi")
+    webbrowser.open("http://www.gme.fyi")
     os.system("python3 main.py")
 
 def open_subreddit():
     # Open the subreddit in a new window
-    os.system("start https://www.reddit.com/r/Superstonk/")
+    webbrowser.open("https://www.reddit.com/r/Superstonk/")
     os.system("python3 main.py")
 
 # Resize the terminal window
